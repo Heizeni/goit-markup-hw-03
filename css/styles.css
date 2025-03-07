@@ -43,6 +43,19 @@ header {
 	display: flex;
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	overflow: hidden;
+  }
+
 .page-header .container {
 	display: flex;
 	justify-content: space-between;
@@ -114,7 +127,9 @@ header {
 	padding: 16px 32px;
 	border-radius: 4px;
 	min-width: 169px;
+	min-height: 56px;
 	display: block;
+	margin-top: 48px;
 }
 
 .servicebtn:hover,
@@ -340,16 +355,3 @@ header {
 	padding: 120px 0px;
 }
 
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    overflow: hidden;
-}
