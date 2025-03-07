@@ -44,9 +44,13 @@ header {
 }
 
 .page-header .container {
-	border-bottom: 1px solid #e7e9fc;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.page-header {
+	border-bottom: 1px solid #e7e9fc;
 }
 
 .page-title {
@@ -129,6 +133,7 @@ header {
 	color: #2E2F42;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+	padding: 24px 0;
 }
 
 .link-nav:hover,
@@ -187,6 +192,7 @@ header {
 	font-size: 18px;
 	line-height: 1.17;
 	letter-spacing: 0.03em;
+	margin-right: 76px;
 }
 
 .webstudio {
@@ -218,15 +224,18 @@ header {
 .header-nav {
 	width: 1158px;
 	display: flex;
+	align-items: center;
 }
 
 .nav-list {
 	display: flex;
 	gap: 40px;
+	list-style: none;
 }
 
 .page-contacts {
 	display: flex;
+	gap: 40px;
 }
 
 .section {
@@ -245,10 +254,7 @@ header {
 	overflow: hidden;
 }
 
-.portfolio-card-list .card .text {
-	padding: 64px 314px 32px 16px;
-}
-
+.portfolio-card-list .card .text, 
 .portfolio-card-list .card .card-title {
-	padding: 32px 226px 64px 16px;
+	padding: 16px;
 }
