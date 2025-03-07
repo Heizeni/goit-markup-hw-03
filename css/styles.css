@@ -65,7 +65,7 @@ header {
 	max-width: 496px;
 }
 
-.aboutus .section-title {
+.aboutus .container .section-title {
 	margin-bottom: 8px;
 }
 
@@ -118,12 +118,62 @@ header {
 
 .section-ourteam {
 	background-color: #F4F4FD;
+	padding: 120px 0;
+	text-align: center;
+}
+
+.section-ourteam .section-title {
+	line-height: 1.11;
+	text-align: center;
+	text-transform: capitalize;
+	margin-bottom: 72px;
+}
+
+.section-ourteam .title {
+	background-color: #FFFFFF;
+}
+
+.team-card {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    width: calc((100% - 72px) / 4);
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-card .card-img {
+	display: block;
+	width: 100%;
+	border-radius: 4px 4px 0 0;
+}
+
+.ourteam-card-list {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	flex-wrap: wrap;
+}
+
+.team-card .title {
+	margin-bottom: 8px;
+}
+
+.team-content {
+	flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 0;
 }
 
 .footer {
 	background-color: #2E2F42;
 	color: #F4F4FD;
-	padding: 100px 0;
+	padding: 100px ;
 }
 
 .footer-text {
@@ -165,20 +215,6 @@ header {
 .link-contacts:hover,
 .link-contacts:focus {
 	color: #404bbf;
-}
-
-.section-ourteam .section-title {
-	line-height: 1.11;
-	text-align: center;
-	text-transform: capitalize;
-}
-
-.section-ourteam .title {
-	background-color: #FFFFFF;
-}
-
-.ourteam-list {
-	background-color: #FFFFFF;
 }
 
 .section-portfolio .section-title {
@@ -269,15 +305,15 @@ header {
 
 .visually-hidden {
     position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	white-space: nowrap;
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
 }
 
 .aboutus .card-list {
