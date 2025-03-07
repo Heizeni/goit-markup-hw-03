@@ -65,6 +65,10 @@ header {
 	max-width: 496px;
 }
 
+.aboutus .section-title {
+	margin-bottom: 8px;
+}
+
 .section-title {
 	font-size: 36px;
 	line-height: 1.1;
@@ -263,15 +267,24 @@ header {
 	padding: 16px;
 }
 
-.section-title.visually-hidden {
+.visually-hidden {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	overflow: hidden;
+}
+
+.aboutus .card-list {
+	display: flex;
+	gap: 24px;
+}
+
+.aboutus .card-list .card {
+	width: calc((100% - 72px) / 4);
 }
